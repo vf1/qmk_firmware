@@ -14,8 +14,8 @@
     },
     "matrix_pins": {
         "direct": [
-            ["GP14", "GP2", "GP6", "GP10", "GP27", "GP20"],
-            ["GP15", "GP3", "GP7", "GP11", "GP28", "GP21"],
+            ["GP14", "GP14", "GP6", "GP10", "GP27", "GP20"],
+            ["GP15", "GP14", "GP7", "GP11", "GP28", "GP21"],
             ["GP16", "GP4", "GP8", "GP12", "GP22", "GP18"],
             ["GP17", "GP5", "GP9", "GP13", "GP26", "GP19"]
         ]
@@ -28,8 +28,8 @@
         "matrix_pins": {
             "right": {
                 "direct": [
-                    ["GP27", "GP20", "GP16", "GP10", "GP6", "GP2"],
-                    ["GP28", "GP21", "GP17", "GP11", "GP7", "GP3"],
+                    ["GP27", "GP20", "GP16", "GP10", "GP6", "GP14"],
+                    ["GP28", "GP21", "GP17", "GP11", "GP7", "GP14"],
                     ["GP14", "GP22", "GP18", "GP12", "GP8", "GP4"],
                     ["GP15", "GP26", "GP19", "GP13", "GP9", "GP5"]
                 ]
@@ -58,8 +58,8 @@
     },
     "url": "",
     "usb": {
-        "device_version": "1.0.0",
-        "pid": "0x0000",
+        "device_version": "2.0.0",
+        "pid": "0x0001",
         "vid": "0xFEED"
     },
     "layouts": {

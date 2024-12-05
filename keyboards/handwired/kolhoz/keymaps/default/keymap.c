@@ -37,6 +37,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
+    [LDEF] = { ENCODER_CCW_CW(MS_WHLU, MS_WHLD),  ENCODER_CCW_CW(MS_WHLU, MS_WHLD) },
+    [LSYM] = { ENCODER_CCW_CW(MS_WHLU, MS_WHLD),  ENCODER_CCW_CW(MS_WHLU, MS_WHLD) },
+    [LNUM] = { ENCODER_CCW_CW(MS_WHLU, MS_WHLD),  ENCODER_CCW_CW(MS_WHLU, MS_WHLD) },
+    [LNAV] = { ENCODER_CCW_CW(MS_WHLU, MS_WHLD),  ENCODER_CCW_CW(MS_WHLU, MS_WHLD) },
+};
+#endif
+
 const key_override_t delete_key_override1 = ko_make_basic(MOD_MASK_GUI, KC_BSPC, KC_DEL);
 const key_override_t delete_key_override2 = ko_make_basic(MOD_MASK_ALT, KC_BSPC, KC_DEL);
 
