@@ -25,6 +25,7 @@
 #define SPI_MISO_PIN     GP28  // rx
 /* pmw3360 config  */
 #define PMW33XX_CS_PIN   GP29  // csn
+#define POINTING_DEVICE_MOTION_PIN GP22
 
 // #define PMW33XX_SPI_DIVISOR                  8
 #define PMW33XX_CPI 1600      // The CPI range is 100-12000, in increments of 100. Defaults to 1600 CPI.
