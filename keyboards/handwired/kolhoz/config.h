@@ -18,14 +18,14 @@
 #define POINTING_DEVICE_DEBUG
 
 // SPI Configuration
-#define SPI_DRIVER   SPID0
+#define SPI_DRIVER       SPID1
 // https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=14
-#define SPI_SCK_PIN  GP22  // sck
-#define SPI_MOSI_PIN GP23  // tx
-#define SPI_MISO_PIN GP20  // rx
-
+#define SPI_SCK_PIN      GP26  // sck
+#define SPI_MOSI_PIN     GP27  // tx
+#define SPI_MISO_PIN     GP28  // rx
 /* pmw3360 config  */
-#define PMW33XX_CS_PIN                       GP10
+#define PMW33XX_CS_PIN   GP29  // csn
+
 // #define PMW33XX_SPI_DIVISOR                  8
 #define PMW33XX_CPI 1600      // The CPI range is 100-12000, in increments of 100. Defaults to 1600 CPI.
 #define PMW33XX_CLOCK_SPEED 2000000 // Sets the clock speed that the sensor runs at. Defaults to 2000000
