@@ -1,6 +1,9 @@
 // Copyright 2023 QMK
 // SPDX-License-Identifier: GPL-2.0-or-later
 
+#include "print.h"
+#include "pointing_device.h"
+
 #include QMK_KEYBOARD_H
 
 enum layers {
@@ -125,4 +128,23 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 
 void keyboard_post_init_user(void) {
     rgblight_layers = rgb_layers;
+
+    // Customise these values to desired behaviour
+    debug_enable=true;
+    debug_matrix=true;
+    debug_keyboard=true;
+    debug_mouse=true;
+
+    /* report_mouse_t x = pointing_device_get_report(); */
+
+    dprint("hello world\n");
 }
+
+/* report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) { */
+/*     debug_enable=true; */
+/*     debug_mouse=true; */
+/*     print("debug test\n"); */
+/**/
+/*     return mouse_report; */
+/* } */
+

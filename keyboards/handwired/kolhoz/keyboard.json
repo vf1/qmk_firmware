@@ -6,7 +6,6 @@
     "features": {
         "bootmagic": true,
         "command": false,
-        "console": false,
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
@@ -14,24 +13,24 @@
     },
     "matrix_pins": {
         "direct": [
-            ["GP14", "GP14", "GP6", "GP10", "GP27", "GP20"],
+            ["GP14", "GP14", "GP6", "GP11", "GP27", "GP11"],
             ["GP15", "GP14", "GP7", "GP11", "GP28", "GP21"],
-            ["GP16", "GP4", "GP8", "GP12", "GP22", "GP18"],
-            ["GP17", "GP5", "GP9", "GP13", "GP26", "GP19"]
+            ["GP16", "GP4", "GP8", "GP12", "GP11", "GP18"],
+            ["GP17", "GP6", "GP9", "GP13", "GP26", "GP19"]
         ]
     },
     "split": {
         "enabled": true,
         "handedness": {
-            "pin": "GP23"
+            "pin": "GP5"
         },
         "matrix_pins": {
             "right": {
                 "direct": [
-                    ["GP27", "GP20", "GP16", "GP10", "GP6", "GP14"],
+                    ["GP27", "GP11", "GP16", "GP11", "GP6", "GP14"],
                     ["GP28", "GP21", "GP17", "GP11", "GP7", "GP14"],
-                    ["GP14", "GP22", "GP18", "GP12", "GP8", "GP4"],
-                    ["GP15", "GP26", "GP19", "GP13", "GP9", "GP5"]
+                    ["GP14", "GP11", "GP18", "GP12", "GP8", "GP4"],
+                    ["GP15", "GP26", "GP19", "GP13", "GP9", "GP6"]
                 ]
             }
         },
@@ -59,7 +58,7 @@
     "url": "",
     "usb": {
         "device_version": "2.0.0",
-        "pid": "0x0001",
+        "pid": "0x0005",
         "vid": "0xFEED"
     },
     "layouts": {

@@ -12,3 +12,21 @@
 
 #define ENCODER_A_PINS { GP2 }
 #define ENCODER_B_PINS { GP3 }
+
+// #define POINTING_DEVICE_MOTION_PIN GP20
+
+#define POINTING_DEVICE_DEBUG
+
+// SPI Configuration
+#define SPI_DRIVER   SPID0
+// https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=14
+#define SPI_SCK_PIN  GP22  // sck
+#define SPI_MOSI_PIN GP23  // tx
+#define SPI_MISO_PIN GP20  // rx
+
+/* pmw3360 config  */
+#define PMW33XX_CS_PIN                       GP10
+// #define PMW33XX_SPI_DIVISOR                  8
+#define PMW33XX_CPI 1600      // The CPI range is 100-12000, in increments of 100. Defaults to 1600 CPI.
+#define PMW33XX_CLOCK_SPEED 2000000 // Sets the clock speed that the sensor runs at. Defaults to 2000000
+#define MOUSE_EXTENDED_REPORT // Use -32767 to 32767, instead of just -127 to 127./
