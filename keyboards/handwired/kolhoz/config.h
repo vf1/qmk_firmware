@@ -10,8 +10,8 @@
 
 #define ENCODER_RESOLUTION 1
 
-#define ENCODER_A_PINS { GP2 }
-#define ENCODER_B_PINS { GP3 }
+#define ENCODER_A_PINS { GP16 }
+#define ENCODER_B_PINS { GP17 }
 
 // #define POINTING_DEVICE_MOTION_PIN GP20
 
