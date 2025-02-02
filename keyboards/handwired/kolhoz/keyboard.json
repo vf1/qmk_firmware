@@ -9,7 +9,11 @@
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
-        "rgblight": true
+        "rgblight": true,
+        "audio": true
+    },
+    "audio": {
+        "driver": "pwm_hardware"
     },
     "diode_direction": "ROW2COL",
     "matrix_pins": {

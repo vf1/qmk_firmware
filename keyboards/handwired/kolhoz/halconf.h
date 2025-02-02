@@ -6,4 +6,6 @@
 #define HAL_USE_SPI TRUE
 // #define SPI_USE_WAIT TRUE // from doc
 
+#define HAL_USE_PWM TRUE
+
 #include_next <halconf.h>

@@ -31,3 +31,13 @@
 #define PMW33XX_CPI 1600      // The CPI range is 100-12000, in increments of 100. Defaults to 1600 CPI.
 #define PMW33XX_CLOCK_SPEED 2000000 // Sets the clock speed that the sensor runs at. Defaults to 2000000
 #define MOUSE_EXTENDED_REPORT // Use -32767 to 32767, instead of just -127 to 127./
+
+
+// audio
+// doc about PWMDx and channel A,B relation to GPy
+// https://github.com/khoih-prog/RP2040_PWM?tab=readme-ov-file#programmers-model
+#define AUDIO_PIN GP18
+#define AUDIO_PWM_DRIVER PWMD1
+#define AUDIO_PWM_CHANNEL RP2040_PWM_CHANNEL_A
+#define AUDIO_INIT_DELAY
+#define AUDIO_CLICKY
