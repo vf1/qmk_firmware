@@ -126,6 +126,11 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     return state;
 }
 
+void pointing_device_init_user(void) {
+    /* set_auto_mouse_layer(<mouse_layer>); // only required if AUTO_MOUSE_DEFAULT_LAYER is not set to index of <mouse_layer> */
+    set_auto_mouse_enable(true);
+}
+
 void keyboard_post_init_user(void) {
     rgblight_layers = rgb_layers;
 
